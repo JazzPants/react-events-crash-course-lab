@@ -41,9 +41,11 @@ export function drawChromeBoiAtCoords(x, y) {
 }
 
 export function toggleCycling() {
-  cycling = !cycling
+  cycling = !cycling //! to convert to boolean
+  console.log(`cycling is ${cycling}`)
 }
 
+//sizeX or sizeY multipliers to make picture "chromeBoi" bigger or smaller
 export function resize(type) {
   const multiplier = (type === "+") ? 1.1 : 0.9
   sizeX *= multiplier
